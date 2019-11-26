@@ -1,0 +1,13 @@
+.site-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.site-nav ul li {
+    list-style-type: none;
+}
+
+.site-nav ul li a {
+    text-decoration: none;
+    padding: 1em;
+}
