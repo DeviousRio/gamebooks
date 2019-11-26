@@ -1,13 +1,21 @@
 .site-nav ul {
     display: flex;
     justify-content: center;
+    padding: 0.5em 0;
 }
 
 .site-nav ul li {
     list-style-type: none;
+    margin: 0 1em;
+    border-radius: 1em;
 }
 
 .site-nav ul li a {
     text-decoration: none;
-    padding: 1em;
+    padding: 1em 1em 0.5em 1em;
+    color: #FFF;
+}
+
+.site-nav ul li a:hover {
+    border-bottom: 1px solid #FFF;
 }

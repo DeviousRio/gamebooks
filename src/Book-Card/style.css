@@ -1,0 +1,22 @@
+.book {
+    margin-top: 3em;
+}
+
+.book-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.book-title {
+    flex: 0 0 100%;
+}
+
+.book-author {
+    flex: 0 0 100%;
+}
+
+.book-price {
+    flex: 0 0 100%;
+}

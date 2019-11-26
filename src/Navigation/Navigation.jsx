@@ -5,11 +5,12 @@ import Link from '../Link/Link';
 function Navigation() {
     return <nav className="site-nav">
         <ul>
-            <Link url="#">Nav 1</Link>
-            <Link url="#">Nav 2</Link>
-            <Link url="#">Nav 3</Link>
-            <Link url="#">Nav 4</Link>
-            <Link url="#">Nav 5</Link>
+            <Link url="#">Начало</Link>
+            <Link url="#">Новини</Link>
+            <Link url="#">Автори</Link>
+            <Link url="#">Книги-Игри</Link>
+            <Link url="#">Логин</Link>
+            <Link url="#">Регистрация</Link>
         </ul>
     </nav>
 }

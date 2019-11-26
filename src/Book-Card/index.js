@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import './style.css';
 
 class BookCard extends Component {
     constructor(props) {
@@ -12,9 +10,9 @@ class BookCard extends Component {
         const { id, title, price, author, image } = this.props;
 
         return (
-            <div>
+            <div className="book">
                 <img className="book-image" src={image} alt={title} />
-                <div>
+                <div className="book-description">
                     <span className="book-title">{title}</span>
                     <span className="book-author">{author}</span>
                     <span className="book-price">{price}</span>
