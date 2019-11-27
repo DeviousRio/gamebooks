@@ -1,2 +1,17 @@
 import React from 'react';
-import 'style.css';
+import Link from '../Link/index';
+import './style.css';
+
+function Footer() {
+    return <ul className="site-footer">
+        <Link url="#">За нас</Link>
+        <Link url="#">Контакти</Link>
+        <Link url="#">Автори</Link>
+        <Link url="#"><i class="fab fa-facebook-square"></i></Link>
+        <Link url="#"><i class="fab fa-youtube"></i></Link>
+        <Link url="#"><i class="fab fa-instagram"></i></Link>
+        <Link className="copyright">Copyright 2019 Gamebooks Bulgaria</Link>
+    </ul>
+}
+
+export default Footer;

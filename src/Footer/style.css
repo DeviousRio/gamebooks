@@ -1,0 +1,26 @@
+.site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.site-footer li {
+    padding: 0.3em 0.5em;
+    font-size: 20px;
+}
+
+.site-footer li a {
+    color: #FFF;
+    padding: 0.5em;
+}
+
+.site-footer li a:hover {
+    border-bottom: 2px solid #FFF;
+}
+
+.site-footer > li:nth-child(4) {
+    flex: 0 0 100%;
+    pointer-events: none;
+    margin-top: 0.5em;
+}
