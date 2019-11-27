@@ -1,5 +1,5 @@
 import React from 'react';
-import './Link.css';
+import './style.css';
 
 function Link({ children, url }) {
     return <li className="nav-link">

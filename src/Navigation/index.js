@@ -1,6 +1,6 @@
 import React from 'react';
-import './Navigation.css';
-import Link from '../Link/Link';
+import Link from '../Link/index';
+import './style.css';
 
 function Navigation() {
     return <nav className="site-nav">
