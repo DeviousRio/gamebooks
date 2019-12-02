@@ -1,0 +1,15 @@
+.error-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.error-page h2 {
+    flex: 0 0 100%;
+    font-size: 15em;
+}
+
+.error-page span {
+    flex: 0 0 100%;
+    font-size: 5em;
+}

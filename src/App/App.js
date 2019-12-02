@@ -6,6 +6,8 @@ import Footer from '../Footer/index';
 import Homepage from '../Homepage/index';
 import Gamebooks from '../Book-List/index';
 import Login from '../Login/index';
+import Registration from '../Registration/index';
+import ErrorPage from '../Error-Page/index';
 
 function App() {
     return (
@@ -17,6 +19,8 @@ function App() {
                         <Route path="/" exact component={Homepage} />
                         <Route path="/gamebooks" component={Gamebooks} />
                         <Route path="/login" component={Login} />
+                        <Route path="/registration" component={Registration} />
+                        <Route path="*" component={ErrorPage} />
                     </Switch>
                 </div>
                 <Footer />
