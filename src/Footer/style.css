@@ -18,8 +18,11 @@
 .site-footer li a:hover {
     border-bottom: 2px solid #FFF;
 }
+.site-footer li a .fab {
+    font-size: 1.5em;
+}
 
-.site-footer > li:nth-child(7) {
+.site-footer > li:nth-child(4) {
     flex: 0 0 100%;
     pointer-events: none;
     margin-top: 0.5em;

@@ -12,4 +12,5 @@
 .error-page span {
     flex: 0 0 100%;
     font-size: 5em;
+    margin-bottom: 1em;
 }

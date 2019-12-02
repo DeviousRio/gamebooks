@@ -9,7 +9,7 @@ function Navigation() {
                 <Link to="/">Начало</Link>
                 <Link to="/gamebooks">Книги-Игри</Link>
                 <Link to="/login">Вход</Link>
-                <Link to="/registration">Регистрация</Link>
+                <Link to="/register">Регистрация</Link>
             </ul>
         </nav>
     )
