@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link as ReactRouterDomLink } from 'react-router-dom';
 import './style.css';
 
-function Link({ children, url }) {
+function Link({ children, to }) {
     return <li className="nav-link">
-        <a href={url}>{children}</a>
+        <ReactRouterDomLink to={to}>{children}</ReactRouterDomLink>
     </li>
 }
 

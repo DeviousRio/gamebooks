@@ -1,27 +1,17 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route
-} from 'react-router-dom';
-// import Link from '../Link/index';
 import './style.css';
-import App from '../App/App';
-import Login from '../Login/index';
-
+import Link from '../Link/index';
 
 function Navigation() {
     return (
-        <Router>
-            <Switch>
-                <Route path="/" exact component={App}>Начало</Route>
-                {/* <Route path="#">Новини</Route>
-                <Route path="#">Автори</Route>
-                <Route path="#">Книги-Игри</Route> */}
-                <Route path="/login" component={Login}>Логин</Route>
-                {/* <Route path="#">Регистрация</Route> */}
-            </Switch>
-        </Router>
+        <nav className="site-nav">
+            <ul>
+                <Link to="/">Начало</Link>
+                <Link to="/gamebooks">Книги-Игри</Link>
+                <Link to="/login">Вход</Link>
+                <Link to="/registration">Регистрация</Link>
+            </ul>
+        </nav>
     )
 }
 
