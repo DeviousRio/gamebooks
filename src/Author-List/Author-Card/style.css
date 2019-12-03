@@ -1,0 +1,28 @@
+.author {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em 1em;
+}
+
+.author-image {
+    flex: 0 0 10%;
+}
+
+.description {
+    flex: 0 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.author-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.author-description {
+    padding: 0 1em;
+    font-size: 18px;
+}
