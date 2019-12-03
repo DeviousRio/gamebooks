@@ -7,6 +7,7 @@ function Navigation() {
         <nav className="site-nav">
             <ul>
                 <Link to="/">Начало</Link>
+                <Link to="/authors">Автори</Link>
                 <Link to="/gamebooks">Книги-Игри</Link>
                 <Link to="/login">Вход</Link>
                 <Link to="/register">Регистрация</Link>

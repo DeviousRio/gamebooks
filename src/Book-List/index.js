@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import BookCard from '../Book-Card/index';
+import BookCard from './Book-Card/index';
 import './style.css';
 import demodb from '../demodb';
 
 const renderBooks = (books) => {
     return books.map(book => {
         return (<BookCard key={book.id} {...book} />);
-    })
+    });
 };
 
 const BookList = ({ books }) => {

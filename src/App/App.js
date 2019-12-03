@@ -8,6 +8,7 @@ import Gamebooks from '../Book-List/index';
 import Login from '../Login/index';
 import Register from '../Register/index';
 import ErrorPage from '../Error-Page/index';
+import Authors from '../Author-List/index';
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <div className="Container">
                     <Switch>
                         <Route path="/" exact component={Homepage} />
+                        <Route path="/authors" component={Authors} />
                         <Route path="/gamebooks" component={Gamebooks} />
                         <Route path="/login" component={Login} />
                         <Route path="/register" component={Register} />

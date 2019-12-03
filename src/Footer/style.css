@@ -22,7 +22,7 @@
     font-size: 1.5em;
 }
 
-.site-footer > li:nth-child(4) {
+.site-footer > li:nth-child(5) {
     flex: 0 0 100%;
     pointer-events: none;
     margin-top: 0.5em;
