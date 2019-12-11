@@ -13,7 +13,13 @@
     font-weight: 500;
 }
 
-.box input[type="text"], .box input[type="password"], .box input[type="repeatPassword"] {
+.box .form-control {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box .form-control input[type="text"], .box .form-control input[type="password"] {
     flex: 0 0 30%;
     margin: 20px 200px;
     border: 0;
@@ -27,11 +33,11 @@
     color: white;
 }
 
-.box input[type="text"]:focus, .box input[type="password"]:focus {
+.box .form-control input[type="text"]:focus, .box .form-control input[type="password"]:focus {
     border-color: #2ecc71;
 }
 
-.box input[type="submit"] {
+.box .form-control button {
     flex: 0 0 30%;
     border: 0;
     background: none;
@@ -45,6 +51,6 @@
     cursor: pointer;
 }
 
-.box input[type="submit"]:hover {
+.box .form-control button:hover {
     background: #2ecc71;
 }
