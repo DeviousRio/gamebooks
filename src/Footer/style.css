@@ -4,6 +4,7 @@
     justify-content: center;
     padding: 1em 0;
     font-family: 'Lobster', cursive;
+    border-top: 2px solid #FFF;
 }
 
 .site-footer li {
@@ -19,10 +20,11 @@
 .site-footer li a:hover {
     border-bottom: 2px solid #FFF;
 }
+
 .site-footer li a .fab {
     font-size: 1.5em;
 }
 
-.site-footer > li:nth-child(5) {
+.site-footer>li:nth-child(5) {
     pointer-events: none;
 }
