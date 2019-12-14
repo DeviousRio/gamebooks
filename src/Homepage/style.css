@@ -19,9 +19,8 @@
 
 .site-homepage h1 {
     flex: 0 0 100%;
-    padding: 1em;
-    font-family: 'Lobster', cursive;
-    letter-spacing: 0.1em;
+    font-family: 'Baskervville', serif;
+    padding-bottom: 1em;
 }
 
 .site-homepage div p {

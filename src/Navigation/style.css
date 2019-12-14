@@ -1,23 +1,29 @@
+.site-nav {
+    background: url("../pictures/nav-big1.png") no-repeat 50% 5px;
+    padding: 5em 5em 3em 5em;
+}
+
 .site-nav ul {
     display: flex;
     justify-content: center;
     font-family: 'Lobster', cursive;
-    border-bottom: 2px solid #FFF;
-
+    padding-bottom: 1em;
 }
 
 .site-nav ul li {
     list-style-type: none;
-    margin: 1em;
+    margin: 0 1em 0 1em;
     border-radius: 1em;
 }
 
 .site-nav ul li a {
+    font-size: 20px;
     text-decoration: none;
-    padding: 1em 1em 0.5em 1em;
+    padding: 0 0.5em 0 0.5em;
     color: #FFF;
 }
 
 .site-nav ul li a:hover {
-    border-bottom: 2px solid #FFF;
+    color: #787878;
+    transition: all 0.3s ease-in-out 0s;
 }
