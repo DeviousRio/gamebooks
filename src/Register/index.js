@@ -43,7 +43,7 @@ class Register extends React.Component {
                 {rePasswordError && <div className="error">{rePasswordError}</div>}
             </div>
             <div className="form-control">
-                <button type="button" onClick={this.submitHandler}>Register</button>
+                <button type="button" onClick={this.submitHandler}>Регистрация</button>
             </div>
         </form>
     }

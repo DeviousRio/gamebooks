@@ -1,6 +1,9 @@
 .site-nav ul {
     display: flex;
     justify-content: center;
+    font-family: 'Lobster', cursive;
+    border-bottom: 2px solid #FFF;
+
 }
 
 .site-nav ul li {

@@ -48,6 +48,7 @@ function App() {
                             console.log(state);
                             const { user } = state;
                             const isLogged = !!state.user;
+                            console.log(user);
 
                             return <div className="App">
                                 <Navigation isLogged={isLogged} user={user} />

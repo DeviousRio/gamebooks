@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bitter:400,700|Libre+Baskerville:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baskervville:400,400i|Lobster&display=swap');
 
 /* typography css */
 *, *:before, *:after {
@@ -11,7 +11,7 @@ html {
   box-sizing: border-box;
   line-height: 1.5;
   font-size: 16px;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Baskervville', serif;
   color: #FFF;
 }
 
