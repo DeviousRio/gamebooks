@@ -1,9 +1,8 @@
 import React from 'react';
 
-function Main({ children, title }) {
+function Main({ children }) {
     return (
         <div className="Main">
-            {/* <h1>{title}</h1> */}
             {children}
         </div>
     );
