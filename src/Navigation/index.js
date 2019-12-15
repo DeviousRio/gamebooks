@@ -9,6 +9,7 @@ function Navigation({ isLogged, user }) {
                 <Link to="/">Начало</Link>
                 <Link to="/authors">Автори</Link>
                 <Link to="/gamebooks">Книги-Игри</Link>
+                <Link to="/contacts">Контакти</Link>
                 {!isLogged && <Link to="/login">Вход</Link>}
                 {!isLogged && <Link to="/register">Регистрация</Link>}
                 {isLogged && <Link to="#">Здравейте, {user.username}</Link>}
