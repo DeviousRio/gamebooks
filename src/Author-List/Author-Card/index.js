@@ -7,7 +7,7 @@ class AuthorCard extends Component {
     }
 
     render() {
-        const { id, name, description, image } = this.props;
+        const { name, description, image } = this.props;
 
         return (
             <div className="author">

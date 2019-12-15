@@ -34,7 +34,7 @@
 }
 
 .box .form-control input[type="text"]:focus, .box .form-control input[type="password"]:focus {
-    border-color: #2ecc71;
+    border-color: #FF4500;
 }
 
 .box .form-control button {
@@ -53,4 +53,8 @@
 
 .box .form-control button:hover {
     background: #2ecc71;
+}
+
+::placeholder {
+    color: #FFFFFF;
 }

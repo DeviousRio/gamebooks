@@ -15,6 +15,19 @@ html {
   color: #FFF;
 }
 
+body {
+  margin: 0 auto;
+  max-width: 85em;
+  /* background: url("https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=1080") center no-repeat; */
+  background: url("./pictures/dk-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html, body {
+  min-height: 100%;
+}
+
 h1 { font-size: 2.6em; }
 h2 { font-size: 2.0em; }
 h3 { font-size: 1.8em; }
@@ -28,12 +41,4 @@ a {
 
 li {
     list-style: none outside;
-}
-
-body {
-  margin: 0 auto;
-  max-width: 85em;
-  background: url("https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=1080") center no-repeat;
-  background-position: center;
-  background-size: cover;
 }

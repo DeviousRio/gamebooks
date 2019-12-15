@@ -28,3 +28,19 @@
 .site-footer>li:nth-child(5) {
     pointer-events: none;
 }
+
+.fa-facebook-square {
+    color: #5E73D1;
+}
+
+.fa-youtube {
+    color: #FF0000;
+}
+
+.fa-instagram {
+    color: #8A2387;
+}
+
+.fa-twitter-square {
+    color: #7EC0EE;
+}

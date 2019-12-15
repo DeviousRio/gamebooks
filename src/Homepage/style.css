@@ -20,7 +20,6 @@
 .site-homepage h1 {
     flex: 0 0 100%;
     font-family: 'Baskervville', serif;
-    padding-bottom: 1em;
 }
 
 .site-homepage div p {
@@ -31,6 +30,8 @@
     margin: 1em;
     border-top: 2px solid #FFF;
     border-bottom: 2px solid #FFF;
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 .homepage-list {

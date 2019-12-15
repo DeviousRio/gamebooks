@@ -24,13 +24,13 @@ function render(Cmp) {
     };
 }
 
-function parseCookies() {
-    return document.cookie.split("; ").reduce((acc, cookie) => {
-        const [cookieName, cookieValue] = cookie.split("=");
-        acc[cookieName] = cookieValue;
-        return acc;
-    }, {});
-}
+// function parseCookies() {
+//     return document.cookie.split("; ").reduce((acc, cookie) => {
+//         const [cookieName, cookieValue] = cookie.split("=");
+//         acc[cookieName] = cookieValue;
+//         return acc;
+//     }, {});
+// }
 
 const Auth = ({ children }) => {
     const { dispatch } = React.useContext(StoreContext);
