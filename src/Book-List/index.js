@@ -1,31 +1,26 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
+// import PropTypes from 'prop-types';
 import BookCard from './Book-Card/index';
 import './style.css';
-import demodb from '../demodb';
+import bookService from '../services/book-service';
 
-const renderBooks = (books) => {
-    return books.map(book => {
-        return (<BookCard key={book.id} {...book} />);
-    });
-};
+const Books = () => {
+    const [books, setBooks] = React.useState('');
 
-const BookList = ({ books }) => {
-    return (
-        <Fragment>
+    React.useEffect(() => {
+        bookService.load().then((res) => {
+            setBooks(res);
+        });
+    }, []);
+
+    return <div>
+        {books ?
             <div className="book-list">
-                {renderBooks(demodb)}
-            </div>
-        </Fragment>
-    )
+                {books.map((book) =>
+                    <BookCard key={book._id} {...book} />)}
+            </div> : <div>Loading...</div>
+        }
+    </div>
 };
 
-BookList.defaultProps = {
-    books: []
-}
-
-BookList.propTypes = {
-    books: PropTypes.array.isRequired
-}
-
-export default BookList;
+export default Books;

@@ -7,7 +7,7 @@ class BookCard extends Component {
     }
 
     render() {
-        const { id, title, price, author, image } = this.props;
+        const { title, price, author, image } = this.props;
 
         return (
             <div className="book">
@@ -15,7 +15,7 @@ class BookCard extends Component {
                 <div className="book-description">
                     <span className="book-title">{title}</span>
                     <span className="book-author">{author}</span>
-                    <span className="book-price">{price}</span>
+                    <span className="book-price">{price} лв.</span>
                 </div>
             </div>
         )
