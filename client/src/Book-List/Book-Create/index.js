@@ -3,6 +3,8 @@ import * as yup from 'yup';
 import './style.css';
 import withForm from '../../hocs/withForm';
 import bookService from '../../services/book-service';
+import { number } from 'prop-types';
+// import { Redirect } from 'react-router-dom';
 
 class CreateBook extends React.Component {
     imageOnChangeHandler = this.props.controlChangeHandlerFactory('image');
@@ -10,12 +12,12 @@ class CreateBook extends React.Component {
     authorOnChangeHandler = this.props.controlChangeHandlerFactory('author');
     priceOnChangeHandler = this.props.controlChangeHandlerFactory('price');
 
-    submitHandler = (props) => {
+    submitHandler = () => {
         const errors = this.props.getFormErrorState();
         if (!!errors) { return; }
         const data = this.props.getFormState();
         bookService.create(data).then(() => {
-            this.props.history.push('/');
+            this.props.history.push('/gamebooks');
         });
     };
 
@@ -59,7 +61,23 @@ const initialFormState = {
     image: '',
     title: '',
     author: '',
-    price: Number
+    price: number
 };
 
-export default withForm(CreateBook, initialFormState);
+const schema = yup.object({
+    image: yup.string('ImageUrl should be a string')
+        .required('ImageUrl is required'),
+
+    title: yup.string('Title must be a string')
+        .required('Title is required')
+        .min(1, 'Title must be more than 1 character'),
+
+    author: yup.string('Author must be a string')
+        .required('Author is required'),
+
+    price: yup.number('Price should be positive number')
+        .required('Price is required')
+        .min(1, 'Price should be more that 1')
+});
+
+export default withForm(CreateBook, initialFormState, schema);

@@ -16,6 +16,7 @@
 .create-book .form-control {
     flex: 0 0 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -57,4 +58,8 @@
 
 ::placeholder {
     color: #FFFFFF;
+}
+
+.error {
+    flex: 0 0 100%;
 }

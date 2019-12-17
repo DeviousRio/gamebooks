@@ -56,7 +56,7 @@ const initialFormState = {
 };
 
 const schema = yup.object({
-    username: yup.string('Username shoud be a string')
+    username: yup.string('Username should be a string')
         .required('Username is required')
         .min(4, 'Username should be more than 4 chars'),
 
