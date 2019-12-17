@@ -1,0 +1,38 @@
+.author {
+    flex: 0 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em 1em;
+}
+
+.author-image {
+    flex: 0 0 10%;
+    height: 100%;
+    width: auto;
+}
+
+.description {
+    flex: 0 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.author-nickname {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.author-name {
+    font-size: 17px;
+}
+
+.born {
+    font-size: 17px;
+}
+
+.author-books {
+    padding: 0 1em;
+    font-size: 18px;
+}
