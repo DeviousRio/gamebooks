@@ -4,6 +4,7 @@ import Navigation from '../Navigation/index';
 import Main from './Main/index';
 import Auth from './Auth/index';
 import Homepage from '../Homepage/index';
+import CreateBook from '../Book-List/Book-Create/index';
 import Gamebooks from '../Book-List/index';
 import Login from '../Login/index';
 import Logout from '../Logout/index';
@@ -40,6 +41,7 @@ function App() {
                                 <div className="Container">
                                     <Switch>
                                         <Route path="/" exact render={render(Homepage)} />
+                                        <Route path="/create" exact render={render(CreateBook, { isLogged })} />
                                         <Route path="/authors" exact render={render(Authors, { isLogged })} />
                                         <Route path="/gamebooks" exact render={render(Gamebooks, { isLogged })} />
                                         <Route path="/login" exact render={!isLogged ? render(Login, { isLogged }) : () => <Redirect to="/" />} />

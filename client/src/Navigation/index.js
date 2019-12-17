@@ -10,7 +10,7 @@ function Navigation({ isLogged, user }) {
                 <Link to="/">Начало</Link>
                 <Link to="/authors">Автори</Link>
                 <Link to="/gamebooks">Книги-Игри</Link>
-                {isLogged && <Link to="/add">Добави Книга</Link>}
+                {isLogged && <Link to="/create">Добави Книга</Link>}
                 {!isLogged && <Link to="/login">Вход</Link>}
                 {!isLogged && <Link to="/register">Регистрация</Link>}
                 {isLogged && <Link to="#">Здравейте, {user.username}</Link>}

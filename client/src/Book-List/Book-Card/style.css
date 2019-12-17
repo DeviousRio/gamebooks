@@ -1,5 +1,6 @@
 .book {
-    margin-top: 3em;
+    flex: 0 0 25%;
+    margin-top: 1em;
 }
 
 .book-description {
@@ -7,6 +8,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+}
+
+.book-image {
+    height: 70%;
+    width: auto;
 }
 
 .book-title {

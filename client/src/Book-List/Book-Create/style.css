@@ -1,0 +1,60 @@
+.create-book {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.create-book h1 {
+    flex: 0 0 100%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.create-book .form-control {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.create-book .form-control input[type="text"], .create-book .form-control input[type="number"] {
+    flex: 0 0 30%;
+    margin: 20px 200px;
+    border: 0;
+    background: none;
+    display: block;
+    text-align: center;
+    border: 2px solid #3498db;
+    border-radius: 24px;
+    padding: 14px 10px;
+    outline: none;
+    color: white;
+}
+
+.create-book .form-control input[type="text"]:focus, .create-book .form-control input[type="number"]:focus {
+    border-color: #FF4500;
+}
+
+.create-book .form-control button {
+    flex: 0 0 30%;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px 200px;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+.create-book .form-control button:hover {
+    background: #2ecc71;
+}
+
+::placeholder {
+    color: #FFFFFF;
+}
