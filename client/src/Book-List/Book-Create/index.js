@@ -4,7 +4,7 @@ import './style.css';
 import withForm from '../../hocs/withForm';
 import bookService from '../../services/book-service';
 import { number } from 'prop-types';
-// import { Redirect } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 
 class CreateBook extends React.Component {
     imageOnChangeHandler = this.props.controlChangeHandlerFactory('image');
@@ -13,12 +13,13 @@ class CreateBook extends React.Component {
     priceOnChangeHandler = this.props.controlChangeHandlerFactory('price');
 
     submitHandler = () => {
+        const history = createBrowserHistory({ forceRefresh: true });
+
         const errors = this.props.getFormErrorState();
         if (!!errors) { return; }
         const data = this.props.getFormState();
-        bookService.create(data).then(() => {
-            this.props.history.push('/gamebooks');
-        });
+        bookService.create(data);
+        history.push('/gamebooks');
     };
 
     getFirstControlError = name => {
