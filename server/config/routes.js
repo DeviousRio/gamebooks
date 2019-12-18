@@ -19,5 +19,7 @@ module.exports = (app) => {
 
     app.use('/api/author', router.author);
 
+    app.use('/api/news', router.news);
+
     app.use('*', (req, res, next) => res.send('<h1> Something went wrong. </h1>'))
 };

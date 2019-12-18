@@ -1,0 +1,16 @@
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-container .news-page-title {
+    font-size: 3em;
+    flex: 0 0 100%;
+}
+
+/* .news-container .news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+} */

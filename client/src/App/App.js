@@ -11,7 +11,7 @@ import Logout from '../Logout/index';
 import Register from '../Register/index';
 import Authors from '../Author-List/index';
 import Footer from '../Footer/index';
-import News from '../News/index';
+import News from '../News-List/index';
 import ErrorPage from '../Error-Page/index';
 import Store, { StoreContext } from "../Store/store";
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';

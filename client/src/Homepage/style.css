@@ -5,6 +5,10 @@
     margin: 2em;
 }
 
+.site-homepage .fa-dice {
+    font-size: 4em;
+}
+
 .site-homepage div {
     flex: 0 0 80%;
     display: flex;

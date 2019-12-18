@@ -1,0 +1,20 @@
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+    border-bottom: 2px solid #ffffff;
+}
+
+.news .news-title {
+    flex: 0 0 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.news .news-description {
+    flex: 0 0 100%;
+    font-size: 1.1em;
+    padding: 1em;
+
+}
