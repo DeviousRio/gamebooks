@@ -11,6 +11,7 @@ import Logout from '../Logout/index';
 import Register from '../Register/index';
 import Authors from '../Author-List/index';
 import Footer from '../Footer/index';
+import News from '../News/index';
 import ErrorPage from '../Error-Page/index';
 import Store, { StoreContext } from "../Store/store";
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
@@ -47,6 +48,7 @@ function App() {
                                         <Route path="/login" exact render={!isLogged ? render(Login, { isLogged }) : () => <Redirect to="/" />} />
                                         <Route path="/register" exact render={!isLogged ? render(Register, { isLogged }) : () => <Redirect to="/" />} />
                                         <Route path="/logout" exact render={isLogged ? render(Logout, { isLogged }) : () => <Redirect to="/" />} />
+                                        <Route path="/news" exact render={render(News)} />
                                         <Route path="*" exact render={render(ErrorPage)}></Route>
                                     </Switch>
                                 </div>

@@ -46,6 +46,18 @@
     border: 1px solid #FFF;
 }
 
+.homepage-list .news {
+    flex: 0 0 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-list .news span {
+    font-size: 3em;
+    padding: 0 0 0.5em 0;
+    font-family: 'Lobster', cursive;
+}
+
 .homepage-list li {
     flex: 0 0 30%;
     padding: 1em;
@@ -61,4 +73,16 @@
     flex: 0 0 30%;
     font-size: 18px;
     padding-top: 1em;
+}
+
+.site-homepage .read-news a {
+    color: #FFFFFF;
+    font-size: 1.1em;
+    border: 2px solid #2ecc71;
+    border-radius: 5px;
+    padding: 0.3em 0.3em 0.3em 0.5em;
+}
+
+.site-homepage .read-news a:hover {
+    background-color: #2ecc71;
 }
