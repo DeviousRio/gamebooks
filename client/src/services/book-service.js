@@ -9,7 +9,7 @@ const bookService = {
     },
 
     create: function (data) {
-        return fetch(`http://localhost:9999/api/book`, {
+        return fetch(`http://localhost:9999/api/book/create`, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'

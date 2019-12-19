@@ -14,9 +14,9 @@ module.exports = {
                 if (book) {
                     res.status(403).send("Book already exist.")
                 } else {
-                    models.Book.create({ title, price, author, image })
+                    models.Book.create({ title, price, author, image });
                 }
             })
-            .catch(next)
+            .catch(next);
     }
 };

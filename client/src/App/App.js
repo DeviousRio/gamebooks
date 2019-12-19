@@ -5,6 +5,7 @@ import Main from './Main/index';
 import Auth from './Auth/index';
 import Homepage from '../Homepage/index';
 import CreateBook from '../Book-List/Book-Create/index';
+import AddAuthor from '../Author-List/Author-Create/index';
 import Gamebooks from '../Book-List/index';
 import Login from '../Login/index';
 import Logout from '../Logout/index';
@@ -33,7 +34,7 @@ function App() {
                 <Auth>
                     <StoreContext.Consumer>
                         {({ state }) => {
-                            console.log(state);
+                            // console.log(state);
                             const { user } = state;
                             const isLogged = !!state.user;
 
@@ -42,12 +43,13 @@ function App() {
                                 <div className="Container">
                                     <Switch>
                                         <Route path="/" exact render={render(Homepage)} />
-                                        <Route path="/create" exact render={render(CreateBook, { isLogged })} />
                                         <Route path="/authors" exact render={render(Authors, { isLogged })} />
                                         <Route path="/gamebooks" exact render={render(Gamebooks, { isLogged })} />
                                         <Route path="/login" exact render={!isLogged ? render(Login, { isLogged }) : () => <Redirect to="/" />} />
                                         <Route path="/register" exact render={!isLogged ? render(Register, { isLogged }) : () => <Redirect to="/" />} />
                                         <Route path="/logout" exact render={isLogged ? render(Logout, { isLogged }) : () => <Redirect to="/" />} />
+                                        <Route path="/create" exact render={render(CreateBook, { isLogged })} />
+                                        <Route path="/add" exact render={render(AddAuthor, { isLogged })} />
                                         <Route path="/news" exact render={render(News)} />
                                         <Route path="*" exact render={render(ErrorPage)}></Route>
                                     </Switch>
