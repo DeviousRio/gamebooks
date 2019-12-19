@@ -71,4 +71,21 @@ const initialFormState = {
     image: ''
 };
 
-export default withForm(CreateAuthor, initialFormState);
+const schema = yup.object({
+    nickname: yup.string('Nickname must be a string')
+        .required('Nickname is required'),
+
+    name: yup.string('Name must be a string')
+        .required('Name is required'),
+
+    born: yup.string('Born must be string')
+        .required('Born is required'),
+
+    books: yup.string('Books must be a string')
+        .required('There must be at least one book'),
+
+    image: yup.string('ImageUrl must be a string')
+        .required('ImageUrl is required')
+});
+
+export default withForm(CreateAuthor, initialFormState, schema);
