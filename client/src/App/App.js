@@ -43,7 +43,7 @@ function App() {
                                 <div className="Container">
                                     <Switch>
                                         <Route path="/" exact render={render(Homepage)} />
-                                        <Route path="/authors" exact render={render(Authors, { isLogged })} />
+                                        <Route path="/authors" exact render={render(Authors, { isLogged }, { user })} />
                                         <Route path="/gamebooks" exact render={render(Gamebooks, { isLogged })} />
                                         <Route path="/login" exact render={!isLogged ? render(Login, { isLogged }) : () => <Redirect to="/" />} />
                                         <Route path="/register" exact render={!isLogged ? render(Register, { isLogged }) : () => <Redirect to="/" />} />

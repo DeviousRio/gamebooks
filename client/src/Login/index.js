@@ -39,11 +39,11 @@ const Login = () => {
     return <form className="box">
         <h1>Вход</h1>
         <div className="form-control">
-            <input type="text" name="" placeholder="Username" onChange={usernameFormControl.changeHandler} />
+            <input type="text" name="" placeholder="Име" onChange={usernameFormControl.changeHandler} />
         </div>
         {usernameFormControl.errors && usernameFormControl.errors[0]}
         <div className="form-control">
-            <input type="password" name="" placeholder="Password" onChange={passwordFormControl.changeHandler} />
+            <input type="password" name="" placeholder="Парола" onChange={passwordFormControl.changeHandler} />
         </div>
         {passwordFormControl.errors && passwordFormControl.errors[0]}
         {state.error && state.error}

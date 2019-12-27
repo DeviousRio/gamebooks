@@ -3,6 +3,8 @@ import './style.css';
 import Link from '../Link/index';
 
 function Navigation({ isLogged, user }) {
+
+
     return (
         <nav className="site-nav">
             <ul>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './style.css';
 
 class AuthorCard extends Component {
-
+    
     render() {
         const { nickname, name, born, books, image } = this.props;
 

@@ -9,3 +9,7 @@
     border-bottom: 2px solid #FFFFFF;
     padding: 0.5em 1em 1em 1em;
 }
+
+.book-list-img h2 {
+    padding: 1em 0;
+}

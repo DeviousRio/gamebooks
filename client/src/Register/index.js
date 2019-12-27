@@ -31,15 +31,15 @@ class Register extends React.Component {
         return <form className="box">
             <h1>Регистрация</h1>
             <div className="form-control">
-                <input type="text" placeholder="Username" onChange={this.usernameOnChangeHandler} />
+                <input type="text" placeholder="Име" onChange={this.usernameOnChangeHandler} />
                 {usernameError && <div className="error">{usernameError}</div>}
             </div>
             <div className="form-control">
-                <input type="password" placeholder="Password" onChange={this.passwordOnChangeHandler} />
+                <input type="password" placeholder="Парола" onChange={this.passwordOnChangeHandler} />
                 {passwordError && <div className="error">{passwordError}</div>}
             </div>
             <div className="form-control">
-                <input type="password" placeholder="Repeat Password" onChange={this.rePasswordOnChangeHandler} />
+                <input type="password" placeholder="Повтори Парола" onChange={this.rePasswordOnChangeHandler} />
                 {rePasswordError && <div className="error">{rePasswordError}</div>}
             </div>
             <div className="form-control">
